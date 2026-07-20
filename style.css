@@ -31,3 +31,19 @@ background:green;
 h1{
 color:#1565c0;
 }
+
+progress{
+    width:90%;
+    height:20px;
+    margin:15px;
+}
+
+#accueil{
+    max-width:500px;
+    margin:auto;
+}
+
+#quiz{
+    max-width:500px;
+    margin:auto;
+}
