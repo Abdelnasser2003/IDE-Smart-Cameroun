@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IDE Smart Cameroun</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IDE Smart Cameroun</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <h1>🩺 IDE Smart Cameroun</h1>
-<p>Apprendre aujourd'hui, sauver des vies demain.</p>
 
-<button>📚 Cours</button>
-<button>📝 QCM</button>
-<button>🧮 Calculateur</button>
-<button>💊 Médicaments</button>
+<div class="qcm">
+
+<h2 id="question">
+Le vaccin contre la tuberculose est :
+</h2>
+
+<button onclick="verifier('A')">A. VPO</button><br><br>
+
+<button onclick="verifier('B')">B. BCG</button><br><br>
+
+<button onclick="verifier('C')">C. VAR</button><br><br>
+
+<button onclick="verifier('D')">D. VAT</button>
+
+<h3 id="resultat"></h3>
+
+</div>
 
 <script src="app.js"></script>
 
