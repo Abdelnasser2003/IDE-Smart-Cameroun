@@ -1,3 +1,13 @@
+function ouvrirQCM(){
+
+document.getElementById("accueil").style.display="none";
+
+document.getElementById("quiz").style.display="block";
+
+afficherQuestion();
+
+}
+
 let score = 0;
 
 let numero = 0;
@@ -98,4 +108,3 @@ document.body.innerHTML =
 
 }
 
-afficherQuestion();
