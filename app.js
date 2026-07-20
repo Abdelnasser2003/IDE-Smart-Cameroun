@@ -37,6 +37,12 @@ function afficherQuestion(){
 
 document.getElementById("question").innerHTML=questions[numero].question;
 
+document.getElementById("progression").innerHTML =
+"Question " + (numero + 1) + " / " + questions.length;
+
+document.getElementById("barre").value =
+(numero / questions.length) * 100;
+  
 let boutons=document.getElementsByTagName("button");
 
 boutons[0].innerHTML="A. "+questions[numero].A;
