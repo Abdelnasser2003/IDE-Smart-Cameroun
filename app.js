@@ -85,8 +85,13 @@ afficherQuestion();
 
 setTimeout(function(){
 
-document.body.innerHTML="<h1>🎉 Fin du Quiz</h1><h2>Score : "+score+" / "+questions.length+"</h2>";
+let pourcentage = Math.round((score / questions.length) * 100);
 
+document.body.innerHTML =
+"<h1>🎉 Quiz terminé</h1>" +
+"<h2>Score : " + score + " / " + questions.length + "</h2>" +
+"<h2>Pourcentage : " + pourcentage + "%</h2>" +
+"<button onclick='location.reload()'>🔄 Recommencer</button>";
 },1000);
 
 }
