@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculateur médical</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🧮 Calculateur médical</h1>
+
+<h2>Calcul du débit de perfusion</h2>
+
+<input type="number" id="volume" placeholder="Volume (mL)"><br><br>
+
+<input type="number" id="temps" placeholder="Temps (heures)"><br><br>
+
+<button onclick="calculer()">Calculer</button>
+
+<h2 id="resultat"></h2>
+
+<br>
+
+<button onclick="window.location.href='index.html'">
+🏠 Retour à l'accueil
+</button>
+
+<script>
+function calculer(){
+
+let volume = document.getElementById("volume").value;
+
+let temps = document.getElementById("temps").value;
+
+let debit = volume / temps;
+
+document.getElementById("resultat").innerHTML =
+"Débit : " + debit.toFixed(2) + " mL/h";
+
+}
+</script>
+
+</body>
+</html>
