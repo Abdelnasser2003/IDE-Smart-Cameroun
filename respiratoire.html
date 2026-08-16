@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Système respiratoire - IDE Smart Cameroun</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🫁 Système respiratoire</h1>
+
+<h2>Définition</h2>
+
+<p>
+Le système respiratoire permet les échanges gazeux entre l'organisme
+et l'environnement. Il apporte l'oxygène au corps et élimine le dioxyde
+de carbone.
+</p>
+
+<h2>🫁 Principaux organes</h2>
+
+<p><strong>Nez et fosses nasales :</strong> ils participent à la filtration,
+au réchauffement et à l'humidification de l'air.</p>
+
+<p><strong>Pharynx et larynx :</strong> ils participent au passage de l'air
+vers les voies respiratoires.</p>
+
+<p><strong>Trachée et bronches :</strong> elles conduisent l'air vers les poumons.</p>
+
+<p><strong>Poumons :</strong> ils contiennent les alvéoles pulmonaires où
+se produisent les échanges gazeux.</p>
+
+<h2>📌 À retenir</h2>
+
+<p>
+Lors de la respiration, l'oxygène entre dans l'organisme et le dioxyde
+de carbone est éliminé. Les échanges gazeux se produisent principalement
+au niveau des alvéoles pulmonaires.
+</p>
+
+<h2>📝 Mini QCM</h2>
+
+<p>Où se produisent principalement les échanges gazeux ?</p>
+
+<button onclick="reponse(false)">🫀 Dans le cœur</button>
+
+<button onclick="reponse(true)">🫁 Dans les alvéoles pulmonaires</button>
+
+<button onclick="reponse(false)">🧠 Dans le cerveau</button>
+
+<h3 id="resultat"></h3>
+
+<script>
+function reponse(correcte){
+
+if(correcte){
+
+document.getElementById("resultat").innerHTML =
+"✅ Bonne réponse ! Les échanges gazeux se produisent au niveau des alvéoles pulmonaires.";
+
+}else{
+
+document.getElementById("resultat").innerHTML =
+"❌ Mauvaise réponse. La bonne réponse est : les alvéoles pulmonaires.";
+
+}
+
+}
+</script>
+
+<br>
+
+<button onclick="window.location.href='anatomie.html'">
+⬅️ Retour à l'anatomie
+</button>
+
+</body>
+</html>
