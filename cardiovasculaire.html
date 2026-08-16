@@ -55,6 +55,36 @@ les veines le ramènent vers le cœur et les capillaires permettent
 les échanges avec les tissus.
 </p>
 
+<h2>📝 Mini QCM</h2>
+
+<p>Quel organe assure la propulsion du sang dans l'organisme ?</p>
+
+<button onclick="reponse(false)">🫁 Les poumons</button>
+
+<button onclick="reponse(true)">❤️ Le cœur</button>
+
+<button onclick="reponse(false)">🧠 Le cerveau</button>
+
+<h3 id="resultat"></h3>
+
+<script>
+function reponse(correcte){
+
+if(correcte){
+
+document.getElementById("resultat").innerHTML =
+"✅ Bonne réponse ! Le cœur propulse le sang.";
+
+}else{
+
+document.getElementById("resultat").innerHTML =
+"❌ Mauvaise réponse. La bonne réponse est : le cœur.";
+
+}
+
+}
+</script>
+  
 <br>
 
 <button onclick="window.location.href='anatomie.html'">
