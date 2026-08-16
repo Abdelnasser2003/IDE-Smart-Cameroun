@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Système nerveux - IDE Smart Cameroun</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🧠 Système nerveux</h1>
+
+<h2>Définition</h2>
+
+<p>
+Le système nerveux contrôle et coordonne les différentes activités
+de l'organisme. Il permet notamment de recevoir, traiter et transmettre
+des informations.
+</p>
+
+<h2>🧠 Principales parties</h2>
+
+<p><strong>Le cerveau :</strong> il participe au contrôle des mouvements,
+de la pensée, de la mémoire, des émotions et de nombreuses fonctions
+de l'organisme.</p>
+
+<p><strong>La moelle épinière :</strong> elle assure la transmission
+des informations entre le cerveau et une grande partie du corps et
+participe à certains réflexes.</p>
+
+<p><strong>Les nerfs :</strong> ils permettent la transmission
+d'informations entre le système nerveux central et différentes parties
+du corps.</p>
+
+<h2>📌 À retenir</h2>
+
+<p>
+Le système nerveux comprend principalement le système nerveux central
+( cerveau et moelle épinière ) et le système nerveux périphérique,
+constitué notamment des nerfs.
+</p>
+
+<h2>📝 Mini QCM</h2>
+
+<p>Quelle structure fait partie du système nerveux central ?</p>
+
+<button onclick="reponse(false)">💪 Un muscle</button>
+
+<button onclick="reponse(true)">🧠 La moelle épinière</button>
+
+<button onclick="reponse(false)">🫁 Un poumon</button>
+
+<h3 id="resultat"></h3>
+
+<script>
+function reponse(correcte){
+
+if(correcte){
+
+document.getElementById("resultat").innerHTML =
+"✅ Bonne réponse ! La moelle épinière fait partie du système nerveux central.";
+
+}else{
+
+document.getElementById("resultat").innerHTML =
+"❌ Mauvaise réponse. La bonne réponse est : la moelle épinière.";
+
+}
+
+}
+</script>
+
+<br>
+
+<button onclick="window.location.href='anatomie.html'">
+⬅️ Retour à l'anatomie
+</button>
+
+</body>
+</html>
